@@ -1,18 +1,24 @@
 void main() {
-  //STRINGS.....................................................................
+//STRINGS.....................................................................
+
+/* 
 
   print("this is the String Value ");
   print("2" "5");
   print("2" * 4);
+*/
+//INTEGER.....................................................................
 
-  //INTEGER.....................................................................
-
+/* 
   print(2 + 3);
   print("USING BODMAS RULE:" "${2 - 33 * (5 / 23)}");
 
-  //COMMENTS....................................................................
-  print("One Line Comment is");
+*/
+//COMMENTS....................................................................
 
+/* 
+
+  print("One Line Comment is");
   // This is the Single Comments
 
   /*
@@ -21,6 +27,13 @@ void main() {
   Comments in Darts  
   
    */
-  print(
-      "One Line and Multi Line  Comment is ==> // **&**  This is the Multi Line Comments ==> /**/");
+  print("One Line Comment is ==> // *&* This is the Multi Line Comments ==> /**/");
+*/
+
+//VARIABLES....................................................................
+
+//Syntex :
+
+  int something = 34;
+  print(something);
 }
