@@ -42,6 +42,8 @@ void main() {
   // print("its use for \n  New Line");
   // print("its use for \t  spaces btw");
 
+/*
+
 // Type Conversion in Dart ==>  Convert data type to another data type
 
 //(a) String to Integer
@@ -82,4 +84,7 @@ void main() {
   int intvalue3 = doubleValue.toInt();
   print("There is double to int $intvalue3");
   print(" $intvalue3 " " Runtime DataTypes : " "${intvalue3.runtimeType}");
+
+
+  */
 }
