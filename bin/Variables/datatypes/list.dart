@@ -79,6 +79,7 @@ void main() {
 //Question: Write a Dart program that iterates over a list of double values and prints each value multiplied by 2.
 
   List<int> table2 = [2, 4, 6, 8, 10];
+  print(table2[2]);
   for (int table in table2) {
     int result = table * 2;
     print(result);
