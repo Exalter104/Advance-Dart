@@ -1,5 +1,6 @@
 import 'dart:io';
 
+bool isAllowed = false;
 void main() {
   //CONDITIONS .................................................................
   /*
@@ -10,8 +11,8 @@ void main() {
 
   For Example : Calculator app must perform substriction if we click or press a 
   button of substriction .
-
-  */
+................................................................................
+*/
 
 // TYPES OF CONDITIONS
 
@@ -29,6 +30,14 @@ void main() {
     print("No you are not top Rated in Upwork : $isyourUpworkAccVerifies");
   }
 
+// 2nd Example
+  int ages = 23;
+  if (ages != 41 || isAllowed != false) {
+    print("is Allowed : $isAllowed ");
+  } else {
+    print("Not Allowed ");
+  }
+
 //Find Greatest Number Among 3 Numbers
 
   int num1 = 555;
@@ -43,9 +52,11 @@ void main() {
   }
 
 // TERNORY OPERATOR ............................................................
-/*Create an int variable age and initialize it with your age. Write ternary statement
-to print “Teenager” if age is between 13 and 19 and “Not Teenager” if age is not 
-between 13 and 19.*/
+/*Create an int variable age and initialize it with your age. Write ternary stat
+-ement to print “Teenager” if age is between 13 and 19 and “Not Teenager” if age
+is not between 13 and 19.
+................................................................................
+*/
 
   int age = 25;
   if (age >= 13 && age <= 19) {
