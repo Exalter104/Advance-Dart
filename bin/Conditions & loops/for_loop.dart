@@ -3,8 +3,14 @@ void main() {
   //   print(i);
   // }
 
-  int num1;
-  int num2;
-  int sum;
-  for (int i = 0; i < 100; i++) {}
+  // for (int i = 0; i < 10; i++) {
+  //   print("Hellow World $i");
+  // }
+  String value = "Sheraz";
+  // for (int i = 0; i < value.length; i++) {
+  //   print(value[i]);
+  // }
+  for (int i = 0; i <= value.length; i++) {
+    print(value[i]);
+  }
 }
