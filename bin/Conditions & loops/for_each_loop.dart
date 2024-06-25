@@ -69,6 +69,6 @@ collection/List.foreach((singleitems)=>print(singleitems))
     "Sheraz",
   ];
   exalter
-      .asMap() //(exalter(key, value)==>{0:saqib,1:zarar....)}
+      .asMap() //they work  like this  (exalter(key, value)==>{(key) 0:(value) saqib,  1:zarar....)}
       .forEach((key, value) => print("$value  index is $key"));
 }
