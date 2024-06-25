@@ -39,4 +39,44 @@ catch{
   } catch (e) {
     print(e);
   }
+
+/*
+"Finally" In Dart Try Catch
+
+Def:
+"The "finally" block is always executed whether the exceptions occur or not. it is 
+an optional if try catch run after that this will run in last "
+
+"ON" Exceptions:
+Def:
+"On block is used when you know what types of exceptions are produced by the program."            
+
+Syntex:
+try {
+.....
+}
+on Exception1(unsported error) {
+// when an error is known , you know the error that what type of error is occurs
+}
+catch Exception2 {
+....
+}
+finally {
+// code that should always execute whether an exception or not.
+}
+................................................................................
+ */
+
+//Example : "Finally & on" In Dart Try Catch
+// solution:
+
+  try {
+    res = a ~/ b;
+  } on UnsupportedError {
+    print("Cannot divide by zero ");
+  } catch (e) {
+    print("catch : ${e.toString()}");
+  } finally {
+    print("Finally block is executed if exception is occurs or not");
+  }
 }
