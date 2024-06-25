@@ -75,7 +75,7 @@ Write a C program to count number of digits in a number.
   print("Enter The number to print  : ");
   int naturalNumber2 = int.parse(stdin.readLineSync()!);
   //While Loop
-  int k = naturalNumbers;
+  int k = naturalNumber2;
   while (k >= 1) {
     print("Natural umber :" "$k");
     k--;
@@ -126,4 +126,36 @@ Write a C program to count number of digits in a number.
     sum2 += j;
   }
   print(sum2);
+
+//(9) :Write a C program to print multiplication table of any number.
+// Solution:
+  print("Enter the Table Number you want :");
+  int tableNumber = int.parse(stdin.readLineSync()!);
+  for (var i = 1; i <= 10; i++) {
+    print(" $i * $tableNumber = ${i * tableNumber}  ");
+  }
+
+//(10) :Write a C program to count number of digits in a number.
+// Solution:
+
+  stdout.write('Enter a number: ');
+  int? number = int.parse(stdin.readLineSync()!);
+
+  // Check if the number is 0
+  if (number == 0) {
+    print('The number of digits is: 1');
+  } else {
+    // Initialize the count to 0
+    int count = 0;
+    // Make a copy of the number to work with
+    int tempNumber = number;
+
+    // Count the number of digits using a for loop
+    for (; tempNumber != 0; tempNumber ~/= 10) {
+      count++;
+    }
+
+    // Print the result
+    print('The number of digits in $number is: $count');
+  }
 }
