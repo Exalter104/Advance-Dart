@@ -25,7 +25,7 @@ catch{
 
 }
 ................................................................................
- */
+
 
 //Example 1: Try Catch In Dart
 //Solution:
@@ -39,7 +39,7 @@ catch{
   } catch (e) {
     print(e);
   }
-
+ */
 /*
 "Finally" In Dart Try Catch
 
@@ -66,7 +66,7 @@ finally {
 }
 ................................................................................
 
- */
+
 //Example : "Finally & on" In Dart Try Catch
 // solution:
 
@@ -79,7 +79,7 @@ finally {
   } finally {
     print("Finally block is executed if exception is occurs or not");
   }
-
+ */
 /*
 "**Throwing An Exception" In Dart Try Catch
 
@@ -121,7 +121,7 @@ throw  Exception_name() {
 }
 
 ................................................................................
- */
+
 
 //Example : "Throwing An Exception
 // solution:
@@ -138,5 +138,36 @@ void checkAccount(int amount) {
   if (amount < 0) {
     throw FormatException(
         " The ammount must be postive"); // you can pass error message
+  }
+}
+ */
+
+/*
+"**How To Create Custom Exception In Dart
+
+**Syntax  
+class customExceptionClassName implements Exception{
+// Constructor / variable / & methods/function
+}
+
+*/
+
+//methods/function body
+  void checkTemperature(int temperature) {
+    if (temperature < 0) throw CustomExceptionOfTemperature().customError();
+  }
+
+// main body area
+  try {
+    checkTemperature(-6);
+  } catch (e) {
+    print(e.toString());
+  }
+}
+
+// Custom exception
+class CustomExceptionOfTemperature implements Exception {
+  String customError() {
+    return "Temperature is very Low";
   }
 }
