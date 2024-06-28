@@ -8,9 +8,9 @@ passes to the function must match to the number of parameters defined.
 important : Syntex ==> void add(int value1,int value2)==> value1 & value2 is parameters
 
 *Diffrents Parameters:
-(1) Positional Parameter In Dart
+(1) Positional Parameter In Dart //! must be same  order of parameters of arguments
 (2) Default Value On Positional Parameter
-(3) Named Parameter In Dart
+(3) Named Parameter In Dart  //! Order is not required as same
 (4) Optional Parameter In Dart
 
 important : (1) Positional Parameter In Dart
@@ -37,7 +37,9 @@ void main() {
   print(
       "......................................................................");
 //important : (1) Positional Parameter In Dart
+//! same Order is must and mandatory for the function  to be called in the same order of arguments  for parameter
 //* EXAMPLE #1 : Use Of Positional Parameter
+// important Syntex: returnType <functionName> (... ,[]){...}
 
   checkPositionalParameter(
     "Sheraz", //important : ARGUMENTS
@@ -48,6 +50,7 @@ void main() {
       "......................................................................");
 //important : (2)  Default Value On Positional Parameter (MEAN : Optional Param)
 //* EXAMPLE #1 : Use Of Default Positional Parameter
+// important Syntex: returnType <functionName> (... ,[]){...}
 
   optionalPositionalParameter("Sheraz", "CFO");
   optionalPositionalParameter("Sheraz", "CFO", 4);
@@ -58,7 +61,18 @@ void main() {
   print(add(1, 2, 2));
   print(
       "......................................................................");
+
+//important : (3) Name Parameter In Dart
+//! same Order is not mandatory for the function  to be called in the same order of arguments  for parameter
+//* important Syntex: returnType <functionName> ({}){...}
+
+  nameParamter(
+    name: "sheraz",
+    RegNumber: 2017,
+    address: "mardan",
+  );
 }
+
 //! Methods /Functions
 
 //important : (1)
@@ -79,4 +93,9 @@ void optionalPositionalParameter(String name, String rank,
 add(int number1, int number2, [int number3 = 0]) {
   int sum = number1 + number2 + number3;
   return sum;
+}
+
+//important : (3)
+void nameParamter({String? name, String? address, int? RegNumber}) {
+  print("Your name is : $name from $address Registered from $RegNumber");
 }
